@@ -23,12 +23,14 @@ Price = 10 + 10 × (Occupancy / Capacity)
 | Platform          | Google Colab       |
 | Dataset Format    | CSV                |
 ---
-## Architecture Diagram
+<details>
+<summary>📐 Click to Expand Architecture Diagram (Mermaid)</summary>
 ```mermaid
 graph TD
-  A[CSV Dataset (73 days)] --> B[Replay Stream with Pathway]
-  B --> C[Real-time Windowing (2hr Tumbling)]
+  A[CSV Dataset] --> B[Replay Stream (Pathway)]
+  B --> C[Windowing (2-Hour Tumbling)]
   C --> D[Model 1 Pricing Logic]
-  D --> E[Live Price Output Table]
-  E --> F[Visualization via Bokeh + Panel]
+  D --> E[Real-Time Output Table]
+  E --> F[Bokeh Visualization]
+
 
