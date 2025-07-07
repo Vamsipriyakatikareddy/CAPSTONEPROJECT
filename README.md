@@ -25,6 +25,7 @@ Price = 10 + 10 × (Occupancy / Capacity)
 ---
 <details>
 <summary>📐 Click to Expand Architecture Diagram (Mermaid)</summary>
+
 ```mermaid
 graph TD
   A[CSV Dataset] --> B[Replay Stream (Pathway)]
@@ -32,5 +33,6 @@ graph TD
   C --> D[Model 1 Pricing Logic]
   D --> E[Real-Time Output Table]
   E --> F[Bokeh Visualization]
+
 
 
